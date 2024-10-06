@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  background-image: url('mac.jpg'); /* Ensure the image is in the public directory */
+  background-image: url('mac.jpg'); /* Correct path to the image */
   background-size: cover;
   background-position: center;
   font-family: 'Arial', sans-serif;
@@ -19,20 +19,19 @@ body {
 
 /* Main container */
 .container {
-  background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background for better contrast */
-  padding: 20px; /* Adjusted padding */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   text-align: center;
-  width: 90%; /* Default to 90% width for better responsiveness */
-  max-width: 400px; /* Max width to maintain layout on larger screens */
+  width: 400px;
 }
 
 /* Header */
 h1 {
-  color: #00d4ff; /* Bright cyan for contrast */
+  color: #00d4ff; /* Bright cyan to contrast with the dark background */
   margin-bottom: 20px;
-  font-size: 30px; /* Larger font size for better visibility */
+  font-size: 28px;
 }
 
 /* Unordered list */
@@ -43,26 +42,25 @@ ul {
 
 /* List items */
 li {
-  margin-bottom: 15px; /* Adjusted margin */
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  background-color: rgba(255, 255, 255, 0.1); /* Light background for list items */
-  padding: 15px; /* Adjusted padding */
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
   border-radius: 10px;
   transition: box-shadow 0.3s ease;
-  width: 100%; /* Make list items take full width */
 }
 
 li:hover {
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* Enhanced shadow effect on hover */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }
 
 /* Link styles */
 .link-name {
   color: #fff;
   font-weight: bold;
-  font-size: 20px; /* Slightly larger for better readability */
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -76,24 +74,22 @@ button {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px 15px; /* Adjusted padding for better touch targets */
+  padding: 8px 12px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%; /* Make buttons take full width */
-  margin-top: 10px; /* Margin for spacing */
 }
 
-/* Button color styles */
 .copy-btn {
   background-color: #28a745; /* Green for copy button */
+  margin-left: 10px;
 }
 
 .visit-btn {
   background-color: #ffc107; /* Yellow for visit button */
+  margin-left: 10px;
 }
 
-/* Button hover effects */
 button:hover {
   background-color: #0056b3;
 }
@@ -104,44 +100,4 @@ button:hover {
 
 .visit-btn:hover {
   background-color: #e0a800;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 600px) {
-  .container {
-    padding: 15px; /* Reduced padding */
-    width: 90%; /* Ensure full width on smaller screens */
-  }
-
-  h1 {
-    font-size: 26px; /* Slightly smaller heading */
-  }
-
-  .link-name {
-    font-size: 18px; /* Smaller font size for links */
-  }
-
-  button {
-    padding: 10px; /* Maintain button padding */
-  }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-  .container {
-    width: 70%; /* Use 70% width on medium screens */
-  }
-
-  h1 {
-    font-size: 28px; /* Slightly smaller heading */
-  }
-}
-
-@media (min-width: 901px) {
-  .container {
-    width: 50%; /* Use 50% width on larger screens */
-  }
-
-  h1 {
-    font-size: 32px; /* Increase heading size for larger screens */
-  }
 }
